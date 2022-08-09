@@ -24,6 +24,7 @@ const getData = async function() {
 //shows user data at top of the page
 const displayUserData = function(data) {
   const div = document.createElement('div');
+  div.classList.add("user-info");
   div.innerHTML = `<figure>
       <img alt="user avatar" src=${data.avatar_url} />
     </figure>
